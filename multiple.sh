@@ -102,12 +102,12 @@ else
     	echo "----------------------------------------------------"
     	cd tools/EyeWitness/Python/
     	sudo ./EyeWitness.py -f ~/Multiple/$domain/finall_site -d ~/Multiple/$domain/screenshots
+        cd ../../..
     }
     recognize() {
     	echo "RECOGNIZE"
 	cd $domain
 	mkdir -p online
-	pwd
 	mv live_host lastlive_host http_site http_site online/
  	cd ..
   	mkdir -p targets
