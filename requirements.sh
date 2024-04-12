@@ -1,8 +1,6 @@
 #!/bin/bash
 sudo apt install subfinder
 sudo apt install httprobe
-# Create the main folder
-cd /$USER/Multiple
 
 # Create subfolders
 mkdir tools
