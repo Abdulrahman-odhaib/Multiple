@@ -18,11 +18,11 @@ read -p "Enter the Domain: " domain
 
 # Check if the domain exists
 if ping -c 1 "ayakalammayhm.$domain" &> /dev/null; then
-    echo -e ">>>>>>>>>>>>>>>> ${RED}BAD: Domain exists. Mission canceled."
+    echo -e ">>>>>>>>>>>>>>>> ${RED}BAD: Wildcard DNS record exists. Mission canceled."
     while true; do echo -e "\a"; done
     exit 1
 else
-    echo -e ">>>>>>>>>>>>>>>> ${RED}GOOD: Domain doesn't exist. Continuing with the mission."
+    echo -e ">>>>>>>>>>>>>>>> ${RED}GOOD: Wildcard DNS record doesn't exist. Continuing with the mission."
     sleep $delay
 
     mkdir $domain 2> /dev/null
