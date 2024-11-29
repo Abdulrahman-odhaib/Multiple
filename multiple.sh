@@ -10,7 +10,7 @@ blue='\033[1;34m'
 
 echo -e "${white}THREE STEPS:	
 	1/ See live domains
-	2/ Open live domains in Chromium
+	2/ Open live domains in Browser
 	3/ Take screenshots 
 "
 
